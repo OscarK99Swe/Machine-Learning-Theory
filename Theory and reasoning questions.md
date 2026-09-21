@@ -157,8 +157,18 @@ Keras is a high-level deel learning API written in Python. It is designed to pri
 ### **Reasoning Questions**
 
 ### 5. Kalle and Stina discuss ML, Kalle says that "if I've trained a model and it doesn't perform well enough on the testdata, I'll have to adjust the model untill it does". Stina says: "It's a big mistake to do that, the only thing you'll achieve is that you'll be overfitting the testdata. The entire purpose of the testdata will be gone then". What do you think?
-*Answer:*
+*Answer:* Stina is 100% correct since by doing what Kalle is planing on doing, you'll risk information leaks and overfitting. 
+
+A dataset is supposed to be an unbiased proxy for unseen real-word data. The entire purpose is to give an honest, final statement of how well the model generalizes after training and hyperparameter runing are complete.
 
 
 ### 6. Many AI/ML projects don't accomplish their initial goals or even reach a prototype phase. Why do you think that is? 
-*Answer:* 
+*Answer:* I don't think that the high failure rate is because of bad mathmatics or bad algorithms, it more than likely is due to organizational issues and data-related challenges. 
+
+If  you have you something or someone pushing for the fastest solution rather than the best solution, you might never get to see the true potential of the what could've been. 
+
+Also, if you've missed something important in the data, lack the domain knowledge around that specific topic you're working with OR simply have bad data. Your output will still be sub-optimal since your output depends on your input. 
+
+Bad input = bad output, no matter how well you actually trained the model. That's my take on it. 
+
+So data analysis, data gathering and understanding the domain is crucial. 
