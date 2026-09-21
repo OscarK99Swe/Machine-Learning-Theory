@@ -1,6 +1,6 @@
-## Chapter 1
+## ***Chapter 1***
 
-### Theory Question
+### **Theory Question**
 
 ### 1. How is AI, ML and DL connected?
 *Answer:*
@@ -51,3 +51,20 @@
 *Answer:*
 
 
+### 4. What is meant by "a model is a simplification of reality"?
+*Answer:*
+
+
+### 5. What does a model being "overfitted" mean?
+*Answer:*
+
+
+### 6. Higher is better in scikit-learn scoring, what does that mean?
+*Answer:*
+
+### 7. What is cross-sectional data, time series data and panel data? Give examples of when these categories can occour.
+*Answer:*
+
+### **Reasoning Questions**
+
+### 8. 
