@@ -67,4 +67,8 @@
 
 ### **Reasoning Questions**
 
-### 8. 
+### 8. Give a few examples of real-world application areas within Machine Learning (ML). Feel free to search the web to answer the question.
+*Answer:*
+
+### 9. Generally speaking, higher is better in scikit-learn scoring, which is why, for example, scoring='neg_mean_squared_error' is used. Explain the logic behind this. That is, why we use 'negative' mean squared error.
+*Answer:*
