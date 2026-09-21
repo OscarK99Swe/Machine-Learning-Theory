@@ -95,4 +95,18 @@ Social Media: Personalized algorithm to maximize user retention.
 There are alot of areas where ML is useful and brings lots of value.
 
 ### 9. Generally speaking, higher is better in scikit-learn scoring, which is why, for example, scoring='neg_mean_squared_error' is used. Explain the logic behind this. That is, why we use 'negative' mean squared error.
-*Answer:*
+*Answer:* Mean Squared Error is inherently a loss metric where lower values represent a batter model performance. The closer you get to zero, the better that model is. 
+
+However, scikit-learn is hardcoded to always maximize the scoring function.
+To make MSE and other loss function compatible with scikit-learn without rewriting the underlying algorithms, scikit-learn multiplies the loss value 
+by -1. 
+
+An MSE of 1.0 becomes -1.0, and MSE of 0.5 becomes -0.5.
+
+-0.5 is more than -1.0. You "have" more money if you owe someone $50 than 
+if you owe someone $100. 
+
+If you owe someone $50, you only need $50 to be debt-free. Where as if you
+someone $100, you need $100 to be debt-free. 
+You can view the "debt" as the amount of "errors". You'd naturally select
+the model with the least amount of debt/errors.
