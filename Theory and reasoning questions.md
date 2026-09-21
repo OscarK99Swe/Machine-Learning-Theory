@@ -38,7 +38,7 @@
 refit=true: Once the best hyperparameter set is found, scikit-learn automatically retrains (refits) the model on the entire dataset using the new best settings.
 
 
-**F, What is categorical data how is how it handle? Use the terms nominal data, ordinal data, one-hot-encoding, dummy-variable-encoding and ordinal encoding in your answer.**
+**F, What is categorical data how is it handle? Use the terms nominal data, ordinal data, one-hot-encoding, dummy-variable-encoding and ordinal encoding in your answer.**
 
 *Answer:* Categorical data is discrete qualitative categories rather than continous numerical values. 
 
