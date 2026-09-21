@@ -136,11 +136,19 @@ In reality, you wouldn't follow these steps exactly as listed in our book, you'd
 *Answer:* Putting a model into production means that it's actually been integrated into a project and that it's fulfilling it's intended purpose. Be it driving a car by itself, giving guesstimates of housing prices or predicting customer churn rates.
 
 
-### 3. What is scikit-learn? The library follows a few central designprinciples, which ones are these? What are estimaters, predictors and transformers? 
-*Answer:*
+### 3. What is scikit-learn? The library follows a few central design principles, which ones are these? What are estimaters, predictors and transformers? 
+*Answer:* Scikit-learn is an open-source machine learning library for Python. it provides tools for predictive data analysis and is built on top of scientific Python libraries such as NumPy, SciPy and Matplotlib. Hence the name, Scientific Kit Learn. 
+
+Core design principles include consistency, inspection, non-proliferation of classes, composition and sensible defaults. 
+
+Estimators - Any object capable of estimating parameters based on a dataset. The learning process is executed using the fix(x, y) method. 
+
+Transformers - A type of estimator that can modify or filter a dataset. The modification is performed by the transform(X) method.
+
+Predictors - A type of estimator capable of making predictions on new data, this uses the predict(x) method.
 
 ### 4. What is TensorFlow and Keras? 
-*Answer:*
+*Answer:* TensorFlow is 
 
 
 
