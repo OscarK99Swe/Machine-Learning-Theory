@@ -148,7 +148,9 @@ Transformers - A type of estimator that can modify or filter a dataset. The modi
 Predictors - A type of estimator capable of making predictions on new data, this uses the predict(x) method.
 
 ### 4. What is TensorFlow and Keras? 
-*Answer:* TensorFlow is 
+*Answer:* TensorFlow is open-source meachine learning platform, but while it does support general machine learning. It's mainly designed for building training and scaling deep nerual networks. It's also very optimized allowing complex operations across different CPU's and GPU's.
+
+Keras is a high-level deel learning API written in Python. It is designed to prioritize developer experience. It does this by abstracting the low-level complexities of neural network construction. Like our teacher said, we're programmers and not mathmaticians. It's also a part of TensorFlow and can be accessed by using "tf.keras".
 
 
 
