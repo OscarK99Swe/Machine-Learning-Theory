@@ -110,3 +110,45 @@ If you owe someone $50, you only need $50 to be debt-free. Where as if you
 someone $100, you need $100 to be debt-free. 
 You can view the "debt" as the amount of "errors". You'd naturally select
 the model with the least amount of debt/errors.
+
+
+
+
+
+## ***Chapter 2***
+
+### **Theory Question**
+
+### 1. The chapter describes a checklist with 7 steps. Give a basic overview of those 7 steps. In reality, do you follow these steps to a T? Or do you jump around the steps to whichever is more suited at that moment? 
+*Answer:* 
+
+1. Define the problem and create an overview - Defining the project's goal.
+2. Get access to the data - Focus on identifying and acquiring the necessary data.
+3. EDA - Exploratory Data Analysis, explore the data, find errors, identify missing values, discover patterns etc. etc.
+4. Process the data - Handle the missing values or remove incomplete rows found during EDA.
+5. ML modeling - The part where you train, optimize and evalute the model against validation data to select the best model.
+6. Present your solution to stakeholders - Show the result to the interested parties by using visualizations and tailoring the abstraction level to the target audience. 
+7. Production deployment and monitoring - The final step is to deploy the model, creating unit tests to verify functionality and continuously monitor it's performance over time as models often need to retrain on newer relevant data to be viable.
+
+In reality, you wouldn't follow these steps exactly as listed in our book, you'd do adapt to whatever is best for the time being. You'll more than likely end up jumping between certain steps becuase "oh no this went wrong" or "we didn't use the same .venv". There are many reasons why you'd need to jump in between them.
+
+### 2. What is meant by putting a model into production? 
+*Answer:* Putting a model into production means that it's actually been integrated into a project and that it's fulfilling it's intended purpose. Be it driving a car by itself, giving guesstimates of housing prices or predicting customer churn rates.
+
+
+### 3. What is scikit-learn? The library follows a few central designprinciples, which ones are these? What are estimaters, predictors and transformers? 
+*Answer:*
+
+### 4. What is TensorFlow and Keras? 
+*Answer:*
+
+
+
+### **Reasoning Questions**
+
+### 5. Kalle and Stina discuss ML, Kalle says that "if I've trained a model and it doesn't perform well enough on the testdata, I'll have to adjust the model untill it does". Stina says: "It's a big mistake to do that, the only thing you'll achieve is that you'll be overfitting the testdata. The entire purpose of the testdata will be gone then". What do you think?
+*Answer:*
+
+
+### 6. Many AI/ML projects don't accomplish their initial goals or even reach a prototype phase. Why do you think that is? 
+*Answer:* 
