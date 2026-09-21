@@ -49,34 +49,50 @@ Dummy variable encoding drops one category column to prevent multicollinearty.
 Ordinal data are categories that have some type of meaningful ranking, it can be grapichs in a video. You can have "low settings", "medium settings" or "high settings". This can easily be converted into numerical rankings unlike nominal data (without using one-hot encoding.) Low = 1, medium = 2, high = 3 and ultra would be ....? Exactly, 4! 
 
 
-**G, What ir feature engineeering?**
+**G, What is feature engineeering?**
 
-*Answer:* 
+*Answer:* The domain guided process of selecting, transforming, combining or creating new variables (features) from raw data to improve the predictive performance and interpretability of ML models.
 
 
 **H, What does principle of parsimony mean?**
 
-*Answer:*
+*Answer:* So if you have two competing models that are similar in performance, you should always choose the simpler model with fewer parameters, features or assumptions. Why? Because it's easier to interpret, easier to run on your computer/server and because it's less likely to suffer overfitting issues.
 
 
 ### 4. What is meant by "a model is a simplification of reality"?
-*Answer:*
+*Answer:* Well, until we have and consider quantum compters as "boring" or "old", we can't really account for every possible variable or noise, nor can we predict the future. 
+
+Machine learning can only give us a simplified, albeit usefull, general estimation of reality due to this.
 
 
 ### 5. What does a model being "overfitted" mean?
-*Answer:*
+*Answer:* A model is considered overfitted if it learns both the underlying patterns and the random noise in the training dataset. Thus making it great at the training data, but terrible on new and unseen test data.
+
+In other words, it's amazing at what we've already told it, but terrible at anything new.
 
 
 ### 6. Higher is better in scikit-learn scoring, what does that mean?
-*Answer:*
+*Answer:* In sci-kit learn, all model evalution metrics are formatted so that larger numerical values represent superior performance. This allows internal optimization algorithms to consistently maximise the scoring metric. 
+
+It's just a simpler and faster way to interpret the score of each model.
 
 ### 7. What is cross-sectional data, time series data and panel data? Give examples of when these categories can occour.
-*Answer:*
+*Answer:* Cross-sectional data, multiple entities measured at a single point in time. An example of this is housing prices across different neighbourhoods in the same city of september 2026.
+
+Time series data, a single entity measured over multiple time periods. Could be measuring how much one specific house has been worth throughout 20 years.
+
+Panel data, multiple entites measured sequentially over multiple time periods. Could be how much a neighbourhood of houses have been worth from 2010 - 2020.
 
 ### **Reasoning Questions**
 
 ### 8. Give a few examples of real-world application areas within Machine Learning (ML). Feel free to search the web to answer the question.
-*Answer:*
+*Answer:* Cars - Self-driving cars, driving assits, lane tracking etc
+
+Enterprise: Will a customer churn? How many of our customers would buy this at this price? 
+
+Social Media: Personalized algorithm to maximize user retention.
+
+There are alot of areas where ML is useful and brings lots of value.
 
 ### 9. Generally speaking, higher is better in scikit-learn scoring, which is why, for example, scoring='neg_mean_squared_error' is used. Explain the logic behind this. That is, why we use 'negative' mean squared error.
 *Answer:*
