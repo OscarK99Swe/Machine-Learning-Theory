@@ -40,12 +40,18 @@ refit=true: Once the best hyperparameter set is found, scikit-learn automaticall
 
 **F, What is categorical data how is how it handle? Use the terms nominal data, ordinal data, one-hot-encoding, dummy-variable-encoding and ordinal encoding in your answer.**
 
-*Answer:*
+*Answer:* Categorical data is discrete qualitative categories rather than continous numerical values. 
+
+Nominal data is data without any logical order, nominal comes from the Latin language but I can't remember which word lol. But essentially, it can be colors and colors don't have specific numbers. You can't say "Oh I want color 5". But using one-hot encoding, we can create binary 0/1 column for each category. 
+
+Dummy variable encoding drops one category column to prevent multicollinearty.
+
+Ordinal data are categories that have some type of meaningful ranking, it can be grapichs in a video. You can have "low settings", "medium settings" or "high settings". This can easily be converted into numerical rankings unlike nominal data (without using one-hot encoding.) Low = 1, medium = 2, high = 3 and ultra would be ....? Exactly, 4! 
 
 
 **G, What ir feature engineeering?**
 
-*Answer:*
+*Answer:* 
 
 
 **H, What does principle of parsimony mean?**
