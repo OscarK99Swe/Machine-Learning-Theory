@@ -179,15 +179,22 @@ So data analysis, data gathering and understanding the domain is crucial.
 ### **Theory Question**
 
 ### 1. What characterizes regression problems? Give some examples of application areas.
-*Answer:*
+*Answer:* A reegression problem is a type of supervised learning task where the goal is to predict a continour numerical value (or a real number) based on one or more input features. 
 
 ### 2. Explain the evaluation metrics RMSE, MSE, and MAE.
-*Answer:*
+*Answer:* MSE "punishes" or "peenalizes" larger errors because the error are squared in Mean Squared Error. It calculates the average of the squared differences between the predicted values and the actual values. 
+
+Root Mean Squared Error (RMSE), is the square root of the MSE, so it "un-does" to squaring to make it easier to interpret. 
+
+Mean Absolute Error (MAE), calculates the average of the absolute differences between predicted and actual values. It shows all errors propotionally isn't as sensitive to outliers as RMSE or MSE.
 
 ### 3. If we are to rank different models, does it matter whether RMSE or MSE is used? Why?
-*Answer:*
+*Answer:* No it really doesn't matter since one is just squaring a number, and the other is "un-squaring" that squared number. So if we have to models, one model A and one model B. Model A can have a lower MSE than model B, which means that it'll also have a lower RMSE.
 
-### 4. Explain at a high level what gradient descent is.
+MSE = 3^2 = 3 * 3 = 9
+RMSE = 9 squared = 3
+
+### 4. Give a simple explination as to what gradient descent is.
 *Answer:*
 
 ### 5. What is the bias-variance trade-off? Why are more complex models not always better?
