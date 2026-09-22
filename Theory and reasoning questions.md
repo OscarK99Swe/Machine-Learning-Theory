@@ -172,3 +172,66 @@ Also, if you've missed something important in the data, lack the domain knowledg
 Bad input = bad output, no matter how well you actually trained the model. That's my take on it. 
 
 So data analysis, data gathering and understanding the domain is crucial. 
+
+
+## ***Chapter 3***
+
+### **Theory Question**
+
+### 1. What characterizes regression problems? Give some examples of application areas.
+*Answer:*
+
+### 2. Explain the evaluation metrics RMSE, MSE, and MAE.
+*Answer:*
+
+### 3. If we are to rank different models, does it matter whether RMSE or MSE is used? Why?
+*Answer:*
+
+### 4. Explain at a high level what gradient descent is.
+*Answer:*
+
+### 5. What is the bias-variance trade-off? Why are more complex models not always better?
+*Answer:*
+
+### 6. Some commonly used models for regression problems are listed below. Explain at a high level how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
+
+A, Linear regression -
+*Answer:*
+
+B, Ridge regression -
+*Answer:*
+
+C, Lasso regression -
+*Answer:*
+
+D, Elastic net -
+*Answer:*
+
+E, Support vector machines -
+*Answer:*
+
+F, Decision trees - 
+*Answer:*
+
+G, Ensemble learning -
+*Answer:*
+
+H, Random forest -
+*Answer:*
+
+### 7. What is meant by white box models and black box models?
+*Answer:*
+
+### 8. What is the difference between bagging and pasting?
+*Answer:*
+
+### **Reasoning questions**
+
+### 9. Explain how figure 3.1 on page 113 can be interpreted
+*Answer:*
+
+### 10. Explain how figure 3.13 on page 140 can be interpreted. How does it relate to figure 3.14 on page 141?
+*Answer:*
+
+### 11. We have learned the evaluation metrics RMSE, MSE, and MAE. Another evaluation metric is what is referred to as the coefficient of determination, or $R^2$. Explain what kind of metric this is.
+*Answer:*
