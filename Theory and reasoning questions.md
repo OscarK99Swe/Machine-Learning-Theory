@@ -195,10 +195,14 @@ MSE = 3^2 = 3 * 3 = 9
 RMSE = 9 squared = 3
 
 ### 4. Give a simple explination as to what gradient descent is.
-*Answer:*
+*Answer:* Gradient Descent is an optimization algorithm used to minimize a model's cost function by iteratively tweaking its parameters.
 
 ### 5. What is the bias-variance trade-off? Why are more complex models not always better?
-*Answer:*
+*Answer:* Bias happens from overly simplistic assumptions in the learning algorithm. High bias causes undefitting. 
+
+Variance happens when the model is extremly sensitive to fluctions in the training dataset, it'll cause overfitting where the "line" perfectly tracks each data point instead of creating a more realistic overview. 
+
+As a model becomes more and more complex, the bias decreases BUT the variance increases. So that is the bias-variance trade-off. You need to find a balance, or as we say in swedish, it needs to be "lagom" :D
 
 ### 6. Some commonly used models for regression problems are listed below. Explain at a high level how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
 
