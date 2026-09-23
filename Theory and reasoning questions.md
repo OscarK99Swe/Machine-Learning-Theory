@@ -333,3 +333,77 @@ A negative R^2 score however, indicates that the model performs worse
 than a simple baseline that predicts the mean. Meaning that the 
 regression line fits the data exceptionally poorly. Time to create a
 new model! 
+
+
+## ***Chapter 4***
+
+### **Theory Question**
+
+### 1. What characterizes classification problems? Give some examples of application areas.
+*Answer:* 
+
+
+### 2. Explain how the OvR and OvO algorithms work
+*Answer:* 
+
+
+
+### 3. Explain the following evaluation metrics:
+*Answer:* 
+
+A, Confusion matrix - 
+
+B, Accuracy - 
+
+C, Precision - 
+
+D, Recall - 
+
+E, $F_1$-score - 
+
+F, ROC curve - 
+
+
+
+### 4. What is the precision-recall tradeoff?
+*Answer:* 
+
+
+
+### 5. Some commonly used models for classification problems are listed below. Explain at a high level how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
+*Answer:* 
+
+A, Logistic regression
+
+B, Support vector machines
+
+C, Decision trees
+
+D, Ensemble learning
+
+E, Random forest
+
+F, Extra trees
+
+
+
+### 6. What does it mean that we can look at feature importance using tree models such as decision trees or random forests?
+*Answer:* 
+
+
+
+### **Reasoning questions**
+
+
+### 7. Stina says to Kalle during a lunch conversation, "I want the highest possible precision for our classification model." Kalle thinks for a while and says, "But what happens to recall then?" What would you have answered? In what cases might you want as high a precision as possible? In what cases could that be bad? If we consider the justice system where a final verdict can lead to prison, what can we say about the precision-recall tradeoff?
+*Answer:* 
+
+
+
+### 8. Explain how Figure 4.8 on page 175 can be interpreted.
+*Answer:*
+
+
+
+### 9. On page 209 it says, "on the training data we use .fit_transform(), on the validation data and the test data we only use .transform()." Explain the logic behind this.
+*Answer:* 
