@@ -508,7 +508,33 @@ irrelevant features to simply the model.
 ### **Reasoning questions**
 
 ### 7. Stina says to Kalle during a lunch conversation, "I want the highest possible precision for our classification model." Kalle thinks for a while and says, "But what happens to recall then?" What would you have answered? In what cases might you want as high a precision as possible? In what cases could that be bad? If we consider the justice system where a final verdict can lead to prison, what can we say about the precision-recall tradeoff?
-*Answer:* 
+*Answer:* If you set a model to only make predictions when it's 100% correct,
+you'll end up free falling recall due to the precision-recall trade off. 
+
+You'd only want to maximize precision if the false alarm can have huge negative
+consequences. A dramatic comparision would be in the theater of war. Your AI-piloted
+drone has spotted a heat signature matching a vehicle. With high precision, 
+it might deviate and refuse to engage due to not being 100% certain of a PID 
+(positive Identification). While on the other hand with low precision, your
+AI drone just commited a war crime by engaging a civilian trying to flee. 
+
+Now this example is really dark, but situations like this are actually happening
+right now.
+
+Our justice system in Sweden would much rather let a guilty man walk than
+to jail an innocent man. But if we use a 100% precision driven classification 
+model, it would mean that most guilty men walk free and justice would never be
+delievered. 
+
+A lower precision and higher recall would risk sending an innocent man
+to prison. 
+
+Statistically speaking, there more than likely is an innocent man in 
+prison right now. It might sound cruel but that's reality. 
+
+Regarding the precision-recall trade off. You've got to pick 
+what you're most comfortable, it has to be a balance of the two. 
+Neither or can be exclusive.
 
 
 
