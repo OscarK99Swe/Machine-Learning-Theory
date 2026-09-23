@@ -434,7 +434,8 @@ model successfully caught.
 *2TP / 2TP + FP + FN*
 
 ***F, ROC curve*** - The Receiver Operating Characteristic (ROC) curve is similiar to the precision-recall
-curve, but instead of visualizing the correlation between pricision and recall, it visualizes the correlation between True Poristive Rate (TPR) and False Positive Rate (FPR). 
+curve, but instead of visualizing the correlation between pricision and recall, 
+it visualizes the correlation between True Poristive Rate (TPR) and False Positive Rate (FPR). 
 
 
 
@@ -449,20 +450,33 @@ again, similiar to the bias-variance trade off from chapter 2.
 
 
 
-### 5. Some commonly used models for classification problems are listed below. Explain at a high level how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
+### 5. Some commonly used models for classification problems are listed below. Give a simple explination as to how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
 *Answer:* 
 
-A, Logistic regression
+***A, Logistic regression*** - It calculates a weighted linear combination
+of input features and passes the result through the sigmoid function.
 
-B, Support vector machines
+This maps any real value to a probility between 0 and 1. If the 
+probability exceeds the threshold, the istance is assigned to the 
+positive class.
 
-C, Decision trees
+***B, Support vector machines*** - Finds the optimal decision boundary (hyperplane) 
+that seperates classes with the maximum margin. Maximum marging is the distance between
+the boundary and the closest data points of any class, AKA support vectors.
 
-D, Ensemble learning
+It uses kernel tricks such as "polynominal", among others, to map complex non-linear data 
+into higher deminsions where it becomes linearly separable.
 
-E, Random forest
 
-F, Extra trees
+***C, Decision trees*** - Recursively partitions data into smaller subgroups by picking features
+and thresholds that best segregate classes. The final product is a tree structure 
+where leaf nodes assign class labels based on majority vote.
+
+***D, Ensemble learning*** - 
+
+***E, Random forest***
+
+***F, Extra trees***
 
 
 
