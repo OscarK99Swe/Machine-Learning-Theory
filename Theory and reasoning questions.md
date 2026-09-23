@@ -340,12 +340,61 @@ new model!
 ### **Theory Question**
 
 ### 1. What characterizes classification problems? Give some examples of application areas.
-*Answer:* 
+*Answer:* A classification problem is a type of supervised learning 
+task where the target variable consists of discrete categories or 
+class labels rather than continuous numbers. There's Binary 
+classification, true or false, and there's multiclass classification,
+more than two mutually exclusive classes.
+
+You can use classification for: 
+
+* Customer analysis - will a customer churn? 
+* Healthcare - Does the patient have a certain condition or not?
+* Image recognition - Does the image contain this, that or what? 
+
+Some of the captcha's we used to have to do back in the day were 
+essentially classification.
 
 
 ### 2. Explain how the OvR and OvO algorithms work
-*Answer:* 
+*Answer:* OvR and OvO, are binary classifiers the handle multiclass
+problems. Not owls.
 
+***OvR or One-vs-Rest, trains *N* binary classifiers for an *N*-class 
+problem.*** 
+
+Classifier *i* is trained to distinguish Class *i* against all 
+remaining *N* - 1 classes combined. 
+
+To predict a new instance, all *N* classifiers run, and the class
+whose classifier outputs the highest confidence score or probability
+is choosen. 
+
+Essentially, it checks if a certain datapoint/data entry belongs to
+a certain Class or not.
+
+***The Owl, OvO or One-vs-One***
+
+Trains a separate binary classifier for every pair of classes, 
+resulting in **(*N* x (*N* - 1))/2** classifiers. 
+
+If we have four classes, A, B, C and D. It'll train 6 different models.
+
+
+A vs B | A vs C | A vs D 
+
+B VS C | B vs D 
+
+and 
+
+C vs D
+
+What we see is that it essentially keeps going "right" or 
+"next-in-line" untill it reaches the end.
+
+To predict a new instance, it runs all models through a 
+"duel system" (or an epic battle of math), where each model casts a 
+vote for one class. The class with the most votes wins.
 
 
 ### 3. Explain the following evaluation metrics:
