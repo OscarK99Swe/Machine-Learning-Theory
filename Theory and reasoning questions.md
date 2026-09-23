@@ -246,10 +246,15 @@ random subset of features at every split, it produces diverse trees
 whose predictions are average.
 
 ### 7. What is meant by white box models and black box models?
-*Answer:* 
+*Answer:* White box models interpret models whose internal mechanics,
+rules and parameter weights can be easily inspeceted and understood
+by humans.
+
+Meanwhile, black box models are way more accurate but almost 
+impossible for humans to understand.
 
 ### 8. What is the difference between bagging and pasting?
-*Answer:*
+*Answer:* 
 
 ### **Reasoning questions**
 
