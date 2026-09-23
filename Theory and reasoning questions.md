@@ -472,9 +472,20 @@ into higher deminsions where it becomes linearly separable.
 and thresholds that best segregate classes. The final product is a tree structure 
 where leaf nodes assign class labels based on majority vote.
 
-***D, Ensemble learning*** - 
+***D, Ensemble learning*** - Ensemble Learning entails two ways of going about things. 
+You've got: 
 
-***E, Random forest***
+* *Voting Classifier* - Which combines predictions from multiple distinct algorithms,
+could be logistic regression + svc + decision tree as an example. It can then use "Hard Voting"
+which is majority rule or "soft voting" which averages predicited probablities, to make it's 
+own classification.
+
+* *Bagging Classifier* - Which trains multiple instances of the same base estimator on 
+different bootstrap samples, random subsets drawn with replacement, of the training set.
+This aggregats predictions via majority vote.
+
+
+***E, Random forest*** - 
 
 ***F, Extra trees***
 
