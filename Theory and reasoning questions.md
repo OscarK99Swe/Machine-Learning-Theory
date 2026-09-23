@@ -439,7 +439,13 @@ curve, but instead of visualizing the correlation between pricision and recall, 
 
 
 ### 4. What is the precision-recall tradeoff?
-*Answer:* 
+*Answer:* Classification models output probability scores between 
+0 and 1, a default threshold (ex. 0.5) converts these probablities
+into final class predictions. 
+
+The precision-recall tradeoff says the increasing precision typically
+decreases recall and vice versa. So it'll all about the balance yet
+again, similiar to the bias-variance trade off from chapter 2.
 
 
 
