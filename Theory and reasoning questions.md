@@ -265,7 +265,10 @@ dataset.
 ### **Reasoning questions**
 
 ### 9. Explain how figure 3.1 on page 113 can be interpreted
-*Answer:* The black dots represent the actual data poitnts we have
+*Answer:* Figure 3.1 shows a linear regression model trying to
+predict values generated based on age.
+
+The black dots represent the actual data poitnts we have
 in the datset. 
 
 The solid blue line represents the predicted values
@@ -282,7 +285,36 @@ So essentially, it's showing us what the model thinks is right,
 what is actually right and how far off the model was.
 
 ### 10. Explain how figure 3.13 on page 140 can be interpreted. How does it relate to figure 3.14 on page 141?
-*Answer:*
+*Answer:* So figure 3.13 displays the logical flowchart of a 
+decision tree regressor.
+
+Each node displays a splitting condition, the current squared error,
+the number of samples in that node and the predicted continous value
+for that subset of data.
+
+Data points are routed down the left branch if the condition is true 
+and the right branch if false.
+
+And figure 3.14 maps the lgoical splits from 3.13 onto a 2D geometric
+space, allowing us to interpret it easier. 
+
+The first split in the root node (X2 <= 0.438) corresponds to the
+main horizontal black line in figure 3.14, dividing the entire plot
+into upper and lower sections.
+
+Second split on the "True" branch and the "False" branch, act as 
+boundary lines, dividing the space into four distinct rectangular 
+regions. 
+
+These four regions correspond exactly the the four leaf nodes at the
+bottom of the tree.
+
+The colors themselves do actually have some sort of meaning, the 
+saturated blue region represents the lowest predicted value (-62.9)
+and the saturated red region represents the highest (62.8). 
+
+
+
 
 ### 11. We have learned the evaluation metrics RMSE, MSE, and MAE. Another evaluation metric is what is referred to as the coefficient of determination, or $R^2$. Explain what kind of metric this is.
 *Answer:*
