@@ -400,17 +400,33 @@ vote for one class. The class with the most votes wins.
 ### 3. Explain the following evaluation metrics:
 *Answer:* 
 
-A, Confusion matrix - 
+***A, Confusion matrix -*** A matrix of four counts that visualizes how well a model 
+performs by comparing the true values and predicted values. 
 
-B, Accuracy - 
+Each row represents the true class while each column represents 
+the predicted class. 
 
-C, Precision - 
+True Positive (TP): Actual positive correctly predicted as positive
 
-D, Recall - 
+True Negative (TN): Actual negative correctly predicated as negative.
 
-E, $F_1$-score - 
+False Positive (FP): Actual negative incorrectly preddict as positive.
 
-F, ROC curve - 
+False Negative (FN): Actual positive incorrectly predicted as negative.
+
+***B, Accuracy*** - Overall proportion of correct predictions 
+out of total prediction made. 
+
+*TP + TN / TP + TN + FP + FN*
+
+***C, Precision*** - Proportion of positive predictions that were 
+actually correct 
+
+***D, Recall*** - 
+
+***E, $F_1$-score*** - 
+
+***F, ROC curve*** - 
 
 
 
