@@ -539,7 +539,22 @@ Neither or can be exclusive.
 
 
 ### 8. Explain how Figure 4.8 on page 175 can be interpreted.
-*Answer:*
+*Answer:* Figure 4.8 visualizes the decision boundaries and predicted
+probabilities of a lgostic regression model perfoming binary classification.
+
+The y-axis shows the probality for two classes, 0 for purple and 1 for yellow.
+The datapoints are mapped in a scatter plot display with induvidual observations
+from the dataset. They are also color coded according to which class they've
+been to classified to. 
+
+Regarding the background colors, the top left part is purple and the plots 
+within this color range belong to class 0. The bottom right part is yellow 
+and the plots within this part belong to class 1. 
+
+Interesting thing to note is the different colors, gradient, in the middle. 
+That is the decision boundary which illustrate the linear nature of logistic regression. 
+These diagonalm different colored lines, are near the 0.5 probability for class 1 
+and acts as the berlin wall (sorry, the border) in which the model shifts it's prediction.
 
 
 
