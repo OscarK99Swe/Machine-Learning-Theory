@@ -497,12 +497,15 @@ This increases training speed and lowers the model variance even more.
 
 
 ### 6. What does it mean that we can look at feature importance using tree models such as decision trees or random forests?
-*Answer:* 
+*Answer:* Tree based models calculates feature importance by meassuring how much each 
+eature contributes to reducing impurity across all nodes and tress in the model. 
 
+This essentially makes the model easier to interpret and helps with identifying what
+actually drivs the predictions AND! It also allows for feature selection by removing
+irrelevant features to simply the model.
 
 
 ### **Reasoning questions**
-
 
 ### 7. Stina says to Kalle during a lunch conversation, "I want the highest possible precision for our classification model." Kalle thinks for a while and says, "But what happens to recall then?" What would you have answered? In what cases might you want as high a precision as possible? In what cases could that be bad? If we consider the justice system where a final verdict can lead to prison, what can we say about the precision-recall tradeoff?
 *Answer:* 
