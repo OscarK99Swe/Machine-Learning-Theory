@@ -204,34 +204,49 @@ Variance happens when the model is extremly sensitive to fluctions in the traini
 
 As a model becomes more and more complex, the bias decreases BUT the variance increases. So that is the bias-variance trade-off. You need to find a balance, or as we say in swedish, it needs to be "lagom" :D
 
-### 6. Some commonly used models for regression problems are listed below. Explain at a high level how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
+### 6. Some commonly used models for regression problems are listed below. EGive a simple explination to how each model works. Also read through each model's documentation; note that you do not need to understand all the details from the documentation, but it is good to have read through it.
 
 A, Linear regression -
-*Answer:*
+*Answer:* Fits a linear equation to the data by finding feature
+weights that minimize the residual sum of squares between predicted
+and actual target values.
 
 B, Ridge regression -
-*Answer:*
+*Answer:* A linear regression variant that adds a penalty equal to 
+the sum of squared feature weights to the cost function.
 
 C, Lasso regression -
-*Answer:*
+*Answer:* Another variant of linear regression that adds a penalty
+equal to the sum of absolute feature weights. 
 
 D, Elastic net -
-*Answer:*
+*Answer:* A hybrid approach combining both Lasso and 
+Ridge penalties.
 
 E, Support vector machines -
-*Answer:*
+*Answer:* Linear regression tries to minimize error, while SVR tries 
+tries to fit as many data points as possible within a wide margin 
+around the regression line.
 
 F, Decision trees - 
-*Answer:*
+*Answer:* Splits the dataset recursively into smaller regions based
+on feature thresholds.
 
 G, Ensemble learning -
-*Answer:*
+*Answer:* Voting Regressor: Combines predictions from multiple 
+distinct model type and averages their outputs.
+
+Bagging Regressor: Trains multiple instances of the same base model 
+on different random subsets of the training data.
 
 H, Random forest -
-*Answer:*
+*Answer:* Basically a bunch of Decision Trees trained using bagging
+with an extra layor of random sprinkled ontop. Only considering a 
+random subset of features at every split, it produces diverse trees
+whose predictions are average.
 
 ### 7. What is meant by white box models and black box models?
-*Answer:*
+*Answer:* 
 
 ### 8. What is the difference between bagging and pasting?
 *Answer:*
