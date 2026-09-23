@@ -311,10 +311,25 @@ bottom of the tree.
 
 The colors themselves do actually have some sort of meaning, the 
 saturated blue region represents the lowest predicted value (-62.9)
-and the saturated red region represents the highest (62.8). 
-
-
+and the saturated red region represents the highest (62.8).
 
 
 ### 11. We have learned the evaluation metrics RMSE, MSE, and MAE. Another evaluation metric is what is referred to as the coefficient of determination, or $R^2$. Explain what kind of metric this is.
-*Answer:*
+*Answer:* R^2, otherwise known as "the coefficient of 
+determination", is an evaluation metric that measures the proportion
+of variance in the dependent variable, the target, that can be 
+explained by the independent variables, features, in the model.
+
+Mainly, R^2 is a scale-free relative metric unlike: RMSE, MSE and MAE.
+
+If you get an R^2 score of 1.0, it means that your model's 
+predictions perfectly match the actual data.
+
+If you get an R^2 score of 0.0, it indicates that the model performs
+exactly as well as a naive baseline model that always predicts that
+mean value of the target variable.
+
+A negative R^2 score however, indicates that the model performs worse
+than a simple baseline that predicts the mean. Meaning that the 
+regression line fits the data exceptionally poorly. Time to create a
+new model! 
