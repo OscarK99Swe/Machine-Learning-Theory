@@ -422,11 +422,19 @@ out of total prediction made.
 ***C, Precision*** - Proportion of positive predictions that were 
 actually correct 
 
-***D, Recall*** - 
+*TP / TP + FP*
 
-***E, $F_1$-score*** - 
+***D, Recall*** - Proportion of actual positive instance that the 
+model successfully caught. 
 
-***F, ROC curve*** - 
+*TP / TP + FN* 
+
+***E, $F_1$-score*** - The "harmonic mean" of precision and recall.
+
+*2TP / 2TP + FP + FN*
+
+***F, ROC curve*** - The Receiver Operating Characteristic (ROC) curve is similiar to the precision-recall
+curve, but instead of visualizing the correlation between pricision and recall, it visualizes the correlation between True Poristive Rate (TPR) and False Positive Rate (FPR). 
 
 
 
