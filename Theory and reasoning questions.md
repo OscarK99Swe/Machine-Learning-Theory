@@ -485,10 +485,15 @@ different bootstrap samples, random subsets drawn with replacement, of the train
 This aggregats predictions via majority vote.
 
 
-***E, Random forest*** - 
+***E, Random forest*** - A collection of many Decision Trees trained using bagging,
+with an extra layer of randomness. When choosing splits at each node, it only considers
+a random subset of featues. This decorrelates the individual trees which reduces variance
+without increasing bias. Very smart, very sigma, very nice.
 
-***F, Extra trees***
-
+***F, Extra trees*** - An extension of Random Forests that indroduces even more randomness.
+Instead of searching for the mathematically optimal split threshold for each feature, it 
+selects random thresholds for each feature candidate and picks the best of those options.
+This increases training speed and lowers the model variance even more. 
 
 
 ### 6. What does it mean that we can look at feature importance using tree models such as decision trees or random forests?
