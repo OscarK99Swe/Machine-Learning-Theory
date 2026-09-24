@@ -611,7 +611,12 @@ recently, it's that RAM prices are not going to go down anytime soon.
 
 
 ### 2. What is dimensionality reduction and why is it done?
-*Answer:*
+*Answer:* It is the process of reducing the number of input variables, 
+features, in a dataset while trying to perserve as much of the necessary
+information, variance and patterns as possible. 
+
+It's done to optimize efficiency, help with reducing overfitting, make it
+easier to visualize for our target auidence and also storage optimization.
 
 
 ### 3. Give a simple explination of how PCA works. Use figure 5.4 on page 224 in your explanation.
