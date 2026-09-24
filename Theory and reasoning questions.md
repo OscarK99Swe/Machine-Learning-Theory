@@ -740,7 +740,42 @@ cluster in half while incorrectly grouping the other two clusters.
 
 
 ### 3. How can you choose the number of clusters to use for a K-means model? Use inertia, silhouette score, and silhouette diagrams in your answer.
-*Answer:*
+*Answer:* In order to find the optimal number of clusters, you cannot 
+simply pick the model with the lowest errors. Since adding more 
+clusters will always mathematically reduce the distance between 
+points and their centroids. You should instead use three main tools
+to evaluate the trade offs. 
+
+***Inertia*** or otherwise known as the "elbow method", which 
+measures the sum of squared distances of samples to their closest
+cluster center. As *K* increases, it'll cause the inertia to drop
+rapidly at first and then flatten out. Look for the "elbow" or
+where it starts flattening out. Figure 6.10 in the book demonstrates
+this quite well. 
+
+***Silhouette score*** is a metric which measures how similiar an 
+object is to its own cluster compared to other clusters ranging
+from -1 to 1. A score closer to 1 means the point fits nicely in
+its own cluster and doesn't fit in with other clusters. You 
+can calculate the mean silhouette score for different *K* values 
+and look for the highest overall score. Which will indicate 
+well seperated and dense clusters.
+
+***Silhouette Diagrams*** are diagrams which visualize the 
+silhouette scores of every individual data point across all 
+clusters for a specifik *K*. You then evaluate the diagram by
+checking for two things. First one is if all clusters cross
+the average silhouette score threshold. If a cluster falls short,
+it usually means bad grouping. Second thing you check is if the
+different clusters have a realtive uniformness in thickness. 
+If 3 out of 4 clusters a small, but one is MASSIVE, there 
+might be something off. 
+
+Alternatively, you can use domain knowledge if possible. 
+In our latest group project, we wanted to group customers
+by their payment method. There were only 4 payment options
+available for the customers, so having 4 clusters made the
+most sense. 
 
 
 
