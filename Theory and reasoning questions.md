@@ -685,7 +685,18 @@ on the fly if you're a genius, but most of us aren't.
 ### **Theory Question**
 
 ### 1. What is clustering? Give some examples of application areas.
-*Answer:*
+*Answer:* Clustering is an unsupervised machine learning technique
+that automatically groups a set of unlabaled data points into
+distinct sub-groups (aka clusters). Data points paced inside the 
+same cluster share similar traits or features while points in different
+clusters are as different from other cluster as possible. 
+
+Some examples could be customer segmentation: You can group different
+types of customers into sub-groups based on their purchase history,
+payment method, browsing history and age etc.
+
+Image segmentation: Grouping pixels with similar colors together to
+reduce file sizes or pick out specific objects with computer vision.
 
 
 ### 2. Give a simple explination how K-means works. Use figure 6.3 (page 238) and figure 6.4 (page 239) in your explanation.
