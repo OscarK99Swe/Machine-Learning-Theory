@@ -700,7 +700,40 @@ reduce file sizes or pick out specific objects with computer vision.
 
 
 ### 2. Give a simple explination how K-means works. Use figure 6.3 (page 238) and figure 6.4 (page 239) in your explanation.
-*Answer:*
+*Answer:* You specifiy the number of clusters you want (*K*),
+the algorithm than randomly selects *K* initial points in the
+feature space as cluster centers. Every data point is assigned
+to its nearest centroid (cluster center) based on the distance.
+We then uodate the position of each centroid by recalculating
+the mean of all data points assigned to that cluster. 
+Lastly, we keep redoing the last two steps untill the centroids
+stop changing positions.
+
+Top left:
+
+Figure 6.3 shows three true an distinct clusters. Meanwhile 
+figure 6.4 shows what happens *K* is set incorreclty, creating
+a hard-to-interpret blob that doesn't make alot of sense. 
+
+Top right:
+
+Figure 6.3 shows long, diagonal clusters, figure 6.4 slices through
+it's through the shape because it measures distance straight to a 
+central point.
+
+Bottom left:
+
+Figure 6.3 shows one big green cluster next to a tight yellow cluster
+and one slightly less tight pruple cluster. Figure 6.4 shows how the 
+purple cluster cuts directly into the loose yellow cluster, stealing
+many data points. This is becuase 6.4 *K*-means assumes equal variance 
+across clusters.
+
+Bottom Right: 
+
+6.3 shows a big and dense cluster on the bottom left and two very
+small and sparse clusters on the right. 6.4 cuts the bottom left 
+cluster in half while incorrectly grouping the other two clusters.
 
 
 ### **Reasoning questions**
