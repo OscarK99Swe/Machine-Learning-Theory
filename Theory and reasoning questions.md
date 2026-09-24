@@ -579,3 +579,60 @@ On the point of consistent scale, if we gave the the test data a new scaler, the
 would be transformed based on a different mean and variance. By only using .transform(),
 we can force the test data into the exact same scale as the training data and thus ensuring
 a consistent scale. 
+
+
+## ***Chapter 5***
+
+### **Theory Question**
+
+### 1. What is meant by the curse of dimensionality?
+*Answer:*
+
+
+### 2. What is dimensionality reduction and why is it done?
+*Answer:*
+
+
+### 3. Give a simple explination of how PCA works. Use figure 5.4 on page 224 in your explanation.
+*Answer:*
+
+
+### **Reasoning questions**
+
+### 5. Stina claims that in machine learning, you always want models that make the best possible predictions. Kalle claims that this is not entirely true because time is also an important aspect, both for the model training itself and for the actual predictions. What do you say?
+*Answer:*
+
+
+
+### 6. After we have performed a PCA, what happens to the interpretation of the variables?
+*Answer:*
+
+
+
+## ***Chapter 6***
+
+### **Theory Question**
+
+### 1. What is clustering? Give some examples of application areas.
+*Answer:*
+
+
+### 2. Give a simple explination how K-means works. Use figure 6.3 (page 238) and figure 6.4 (page 239) in your explanation.
+*Answer:*
+
+
+### **Reasoning questions**
+
+
+### 3. How can you choose the number of clusters to use for a K-means model? Use inertia, silhouette score, and silhouette diagrams in your answer.
+*Answer:*
+
+
+
+### 4. If you look at figure 6.10 on page 247, how many clusters would you have chosen and why? Is choosing the number of clusters an "exact science"?
+*Answer:*
+
+
+
+### 5. How does one interpret figure 6.13 on page 251?
+*Answer:*
