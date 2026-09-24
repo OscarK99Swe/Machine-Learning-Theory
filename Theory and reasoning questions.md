@@ -586,7 +586,28 @@ a consistent scale.
 ### **Theory Question**
 
 ### 1. What is meant by the curse of dimensionality?
-*Answer:*
+*Answer:* The curse of dimensionality is the problems you encounter when 
+dealing with analyzing and modeling data in high-dimensional spaces. 
+By high-dimensional spaces, I mean datasets with a lot of features and columns.
+
+You run into issues such as data sparsity, distance metrics breakdown, overfitting
+and computational workloads.
+
+Data sparsity: The more dimensions you have, the further apart the datapoints 
+become from one another, since they can be in different "dimensions", I could
+be in 3d and you could be in 4d as example. Might not be the best example but
+you get it.
+
+Distance metrics breakdown: Two random datapoints in very high dimensions 
+can become almost identical which negates the effectivness of say K-means.
+
+Overfitting: Our models could find false patterns or noise if given too many
+features in regards to the number of samples which leads to sub-optimal 
+generalization on new data.
+
+Computational workload/burden: Trying to compute high dimensionality requires
+waaay more memory and time to train the model. And if we've learned anything
+recently, it's that RAM prices are not going to go down anytime soon.
 
 
 ### 2. What is dimensionality reduction and why is it done?
