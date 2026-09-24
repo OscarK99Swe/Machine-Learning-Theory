@@ -780,9 +780,11 @@ most sense.
 
 
 ### 4. If you look at figure 6.10 on page 247, how many clusters would you have chosen and why? Is choosing the number of clusters an "exact science"?
-*Answer:*
+*Answer:* I'd choose 4 clusters since: One, that's where the 
+arrow points to showing the actual elbow and two, you get 
+deminishing returns after 4 clusters according to the figure.
 
 
 
 ### 5. How does one interpret figure 6.13 on page 251?
-*Answer:*
+*Answer:* 
