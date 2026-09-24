@@ -620,7 +620,27 @@ easier to visualize for our target auidence and also storage optimization.
 
 
 ### 3. Give a simple explination of how PCA works. Use figure 5.4 on page 224 in your explanation.
-*Answer:*
+*Answer:* Principal Component Analysis works by finding new perpendicular axes
+that align with the directions of maximum variance in the data. Then projecting 
+the dataset onto a lower dimensional subspace defined by these components.
+
+If we take a look at figure 5.4 in the book, we can see that on the left plot,
+namely the original data, the dataset starts in a 2d space defined by X1 and X2.
+And the data points are spread out along a diagonal pattern.
+
+Our PCA finds the maximum variance (C1) along the solid line, this direction 
+captures the greatest variation/spread amongst the data points.
+
+We can now project C1 onto the top right plot in a 1D space. We see that 
+the points fairly spread out while retaining almost all information.
+
+If we compare this with the C2, the low variance, and look at the bottom 
+right plot, we see that the points are clustered way closer together.
+This destroy almost all variance and isn't as usefull to use. 
+
+Our PCA would, in this case, keep C1 and ignore C2 altogether. 
+We have no succesfully lowered our dimension from 2D to 1D while keeping
+the maximum amount of information possible! It's magic! :D
 
 
 ### **Reasoning questions**
