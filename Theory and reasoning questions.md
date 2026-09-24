@@ -787,4 +787,29 @@ deminishing returns after 4 clusters according to the figure.
 
 
 ### 5. How does one interpret figure 6.13 on page 251?
-*Answer:* 
+*Answer:* Figure 6.13 shows a visualized evalution of *K*-means
+clustering using silhouette diagrams for *K* = 3, 4, 5, and 6.
+Or is I like to view them, colorful kitchen knives.
+
+The different colors show the different clusters, 
+the vertical thickness of the knives indicate the number of
+data points in said cluster. The horizontal length shows the
+silhouette coefficient for those points. 
+
+The vertical dashed red line (- - - ) in each plot represents
+the average overall silhouette score for that specific model.
+
+*K* 3 & 4 look decent enough, but the orange knife is massive
+compared to the rest, this indicates that we need more clusters
+for the datapoints to fit evenly. 
+
+*K* 6 isn't good enough since the overall silhouette score is
+lower than the other models. Not all knifes reach the onion.
+(By I onion I mean the red line, could be anything you want 
+it to be lol).
+
+Last option, *K* 5, is it good enough? Well, let's take a look.
+The silhouette score is overall slightly lower than *K* 3 & 4,
+but the cluster sizes are much more equal which usually is 
+prefered when using the *K*-means algorithm. So I'd go with 
+*K*-FÜNF! 
