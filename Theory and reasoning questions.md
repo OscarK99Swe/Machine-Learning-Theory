@@ -665,7 +665,18 @@ meeting deadlines and keeping within budget restraints.
 
 
 ### 6. After we have performed a PCA, what happens to the interpretation of the variables?
-*Answer:* 
+*Answer:* The thing that first is that human interpretability of the 
+original variables are lost becuase PCA constructs entirely new 
+feature axes that are just a linear combination of all the original 
+input variables. 
+
+An example, before PCA, features can have clear names as "Age in years",
+"income in SEK". But after the PCA, a new feature might mathematically
+equal "0.XX * Age - 0.XX".
+
+You can only interpret how much each original feature contributes 
+onto a given principal component. You MIGHT be able to understand it
+on the fly if you're a genius, but most of us aren't.
 
 
 
