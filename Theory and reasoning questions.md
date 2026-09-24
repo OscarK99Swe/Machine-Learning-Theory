@@ -559,4 +559,23 @@ and acts as the berlin wall (sorry, the border) in which the model shifts it's p
 
 
 ### 9. On page 209 it says, "on the training data we use .fit_transform(), on the validation data and the test data we only use .transform()." Explain the logic behind this.
-*Answer:* 
+*Answer:* The logic behind this is to both prevent data leakage and ensure consistent scaling which
+are fundamental principles in machine learning. 
+
+.fit_transform on training data is used because with the first part, ".fit", that allows
+the preprocessor to learn the underyling data such as the minimum, maximum, mean
+or standard deviation. It then takes this and applies the transformation to the training set.
+This sets the "standard" or the "foundation" for your model and how it views data.
+
+.transform() is used on the validation and test data to reapply what the model learnt from 
+the training data, to new unseen data.
+
+If we used the .fit() on the test data, it would disrupt the "simulation" of new unseen real-word
+data since the information of the test set's overall distrbution, including mean or max values,
+would leak into the modeling process. That would give the model an unfair advantage and it'll 
+lead to too optimistic performance scores that wouldn't work well in the final produciton.
+
+On the point of consistent scale, if we gave the the test data a new scaler, the data 
+would be transformed based on a different mean and variance. By only using .transform(),
+we can force the test data into the exact same scale as the training data and thus ensuring
+a consistent scale. 
