@@ -646,12 +646,26 @@ the maximum amount of information possible! It's magic! :D
 ### **Reasoning questions**
 
 ### 5. Stina claims that in machine learning, you always want models that make the best possible predictions. Kalle claims that this is not entirely true because time is also an important aspect, both for the model training itself and for the actual predictions. What do you say?
-*Answer:*
+*Answer:* If we had to ablility to time travel and live in place with
+infinite computational power, then in that case, Stina would be correct.
+
+But since we aren't time travelers, Kalle is correct. 
+It would take too long to compute the absolute best predictions possible
+since you'd have to essentially simulate the entire universe and all different
+variables possible. But even if we didn't had to simulate the entire universe,
+even a dataset can take too long to compute perfectly. Especially while
+in production. 
+
+But budgets are also a thing to keep in mind, RAM isn't free and 
+won't be getting chceaper all of a sudden. 
+
+The best option is the model that is accurate ***enough*** while
+meeting deadlines and keeping within budget restraints.
 
 
 
 ### 6. After we have performed a PCA, what happens to the interpretation of the variables?
-*Answer:*
+*Answer:* 
 
 
 
