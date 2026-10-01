@@ -179,7 +179,16 @@ So data analysis, data gathering and understanding the domain is crucial.
 ### **Theory Question**
 
 ### 1. What characterizes regression problems? Give some examples of application areas.
-*Answer:* A reegression problem is a type of supervised learning task where the goal is to predict a continour numerical value (or a real number) based on one or more input features. 
+*Answer:* A regression problem is a type of supervised learning task where the goal is to predict a continour numerical value (or a real number) based on one or more input features. 
+
+Some example areas are: 
+
+* Real estate valuation, it might not be 100% accurate but it'll give a good enough guesstimation
+to help with issues of "should I sell now?" or "can I afford this house?" or "How much could expect
+to get when selling my house?".
+
+* Business, regression can help with predictions regarding future revenue for a specific time period
+based on historical performance along with current marketing plans/campaigns.
 
 ### 2. Explain the evaluation metrics RMSE, MSE, and MAE.
 *Answer:* MSE "punishes" or "peenalizes" larger errors because the error are squared in Mean Squared Error. It calculates the average of the squared differences between the predicted values and the actual values. 
