@@ -5,8 +5,8 @@
 ### 1. How is AI, ML and DL connected?
 *Answer:* DL is a part of ML, and ML combined with DL is a part of AI, they are nested subsets within computer science. 
 
-### 2. What are the four "problem categories" in ML?
-*Answer:* Supervised learning (classification and regression), Unsupervised learning (clustering and dimensionality reduction), Semi-supervised learning and reinforcement learning. 
+### 2. What are the four "problem categories" in ML within the book?
+*Answer:* Regression, classification, dimensional reduction and clustering.
 
 
 ### 3. Explain the following: 
