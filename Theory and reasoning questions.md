@@ -5,8 +5,8 @@
 ### 1. How is AI, ML and DL connected?
 *Answer:* DL is a part of ML, and ML combined with DL is a part of AI, they are nested subsets within computer science. 
 
-### 2. What are the four "problem categories" in ML?
-*Answer:* Supervised learning (classification and regression), Unsupervised learning (clustering and dimensionality reduction), Semi-supervised learning and reinforcement learning. 
+### 2. What are the four "problem categories" in ML within the book?
+*Answer:* Regression, classification, dimensional reduction and clustering.
 
 
 ### 3. Explain the following: 
@@ -179,7 +179,16 @@ So data analysis, data gathering and understanding the domain is crucial.
 ### **Theory Question**
 
 ### 1. What characterizes regression problems? Give some examples of application areas.
-*Answer:* A reegression problem is a type of supervised learning task where the goal is to predict a continour numerical value (or a real number) based on one or more input features. 
+*Answer:* A regression problem is a type of supervised learning task where the goal is to predict a continour numerical value (or a real number) based on one or more input features. 
+
+Some example areas are: 
+
+* Real estate valuation, it might not be 100% accurate but it'll give a good enough guesstimation
+to help with issues of "should I sell now?" or "can I afford this house?" or "How much could expect
+to get when selling my house?".
+
+* Business, regression can help with predictions regarding future revenue for a specific time period
+based on historical performance along with current marketing plans/campaigns.
 
 ### 2. Explain the evaluation metrics RMSE, MSE, and MAE.
 *Answer:* MSE "punishes" or "peenalizes" larger errors because the error are squared in Mean Squared Error. It calculates the average of the squared differences between the predicted values and the actual values. 
@@ -784,6 +793,19 @@ most sense.
 arrow points to showing the actual elbow and two, you get 
 deminishing returns after 4 clusters according to the figure.
 
+***Choosing the number of clusters isn't an exact science*** and it's often more of an art
+in which domain knowledge usually plays a bigger role. 
+
+since it comes down to:
+
+* *the "lack of ground truth"* which means that there are no predefined correct
+labels or or absolute "ground truths" to validate against. 
+
+* *Domain Knowledge and practicallity* If you have a business with a marketing
+budget only for 3 different segments, but the different statistical metrics
+suggest 6 or more smaller clusters, you'll still end up going with 3 broader
+clusters since that is what makes the most practical sense rather than being 
+super niche and tailored towards all 6+ different segments.
 
 
 ### 5. How does one interpret figure 6.13 on page 251?
