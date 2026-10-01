@@ -793,6 +793,19 @@ most sense.
 arrow points to showing the actual elbow and two, you get 
 deminishing returns after 4 clusters according to the figure.
 
+***Choosing the number of clusters isn't an exact science*** and it's often more of an art
+in which domain knowledge usually plays a bigger role. 
+
+since it comes down to:
+
+* *the "lack of ground truth"* which means that there are no predefined correct
+labels or or absolute "ground truths" to validate against. 
+
+* *Domain Knowledge and practicallity* If you have a business with a marketing
+budget only for 3 different segments, but the different statistical metrics
+suggest 6 or more smaller clusters, you'll still end up going with 3 broader
+clusters since that is what makes the most practical sense rather than being 
+super niche and tailored towards all 6+ different segments.
 
 
 ### 5. How does one interpret figure 6.13 on page 251?
